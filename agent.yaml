@@ -1,0 +1,19 @@
+agentName: diceagent
+image: kcbabo/diceagent:1.0.1
+language: python
+framework: adk
+modelProvider: gemini
+modelName: gemini-2.5-flash
+description: ""
+telemetryEndpoint: http://telemetry.agentregistry.a.solo-agentic-demo.com/v1/traces
+mcpServers:
+    - type: registry
+      name: kcbabo-my-mcp-server
+      env:
+        - MCP_TRANSPORT_MODE=http
+        - HOST=0.0.0.0
+        - MCP_STATELESS_HTTP=true
+      registryURL: https://api.agentregistry.a.solo-agentic-demo.com
+      registryServerName: kcbabo/my-mcp-server
+      registryServerVersion: 1.0.1
+updatedAt: 2026-02-09T11:26:40.238932-05:00
